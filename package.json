@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/AsiruDil/shopping-backend/issues"
   },
-  "homepage": "https://github.com/AsiruDil/shopping-backend#readme"
+  "homepage": "https://github.com/AsiruDil/shopping-backend#readme",
+  "dependencies": {
+    "axios": "^1.21.1",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.13.1",
+    "nodemon": "^3.1.14"
+  }
 }
