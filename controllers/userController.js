@@ -86,3 +86,15 @@ export async function loginUser(req,res){
     }
 
 }
+
+
+export  function isAdmin(req){
+    if(req.user==null){
+        return false
+    }
+    if(req.user.isAdmin){
+        return true
+    }else{
+        return false
+    }
+}
